@@ -23,7 +23,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
 
       <div>
-        <h4>Navegação</h4>
+        <h3>Navegação</h3>
         <ul>
           <li><a href="#sobre">Sobre</a></li>
           <li><a href="#diferenciais">Diferenciais</a></li>
@@ -35,7 +35,7 @@ if ( ! defined( 'ABSPATH' ) ) {
       </div>
 
       <div>
-        <h4>Contato</h4>
+        <h3>Contato</h3>
         <ul>
           <li><a href="tel:+5511947340026">(11) 94734-0026 &middot; Luiz Fernando</a></li>
           <li><a href="tel:+5511984151528">(11) 98415-1528 &middot; Luciana</a></li>

@@ -23,7 +23,9 @@ Tags: institucional, construcao, one-page, acessivel
   --bone:#F4F0E9;  --bone-2:#EAE3D8;  --sand:#DBD5C1;
   --ink:#1C1B19;   --ink-2:#232220;
   --muted:#57514A; --muted-dark:#C6BEB0;
-  --clay:#E8B6A4;  --clay-deep:#A24A28; --bronze:#A18961;
+  --clay:#E8B6A4;  --clay-deep:#A24A28;
+  --bronze:#A18961;      /* filete e texto sobre fundo escuro */
+  --bronze-ink:#7C6036;  /* mesma familia, para texto sobre fundo claro (AA) */
 
   --f-display:"Playfair Display",Georgia,"Times New Roman",serif;
   --f-sans:"Archivo","Helvetica Neue",Arial,sans-serif;
@@ -69,7 +71,8 @@ strong{font-weight:600;color:var(--ink)}
   margin:0 0 1.15rem;
 }
 .dark .eyebrow{color:var(--clay)}
-.eyebrow .sl{color:var(--bronze);font-weight:500;margin:0 .18em}
+.eyebrow .sl{color:var(--bronze-ink);font-weight:500;margin:0 .18em}
+.dark .eyebrow .sl,.hero .eyebrow .sl{color:var(--bronze)}
 
 .lede{font-size:clamp(1.02rem,1.35vw,1.19rem);line-height:1.62;color:var(--muted);max-width:60ch}
 .dark .lede{color:var(--muted-dark)}
@@ -210,6 +213,10 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 .hero .eyebrow{color:var(--clay)}
 .hero-lede{margin-top:1.55rem;max-width:52ch;color:#DED7CB;font-size:clamp(1rem,1.25vw,1.12rem);line-height:1.6}
 .hero-actions{margin-top:2.15rem;display:flex;flex-wrap:wrap;gap:14px}
+.hero .btn-line{color:var(--bone);border-color:rgba(244,240,233,.45)}
+.hero .btn-line:hover{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.hero .btn-solid{background:var(--bone);color:var(--ink)}
+.hero .btn-solid:hover{background:var(--clay);color:var(--ink)}
 
 .hero-meta{
   margin:0;min-width:238px;
@@ -268,7 +275,8 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
   padding:15px 0;border-bottom:1px solid var(--sand);
   font:500 .935rem/1.5 var(--f-sans);
 }
-.creds b{font:500 .73rem/1.7 var(--f-sans);color:var(--bronze);letter-spacing:.06em;font-variant-numeric:tabular-nums}
+.creds b{font:500 .73rem/1.7 var(--f-sans);color:var(--bronze-ink);letter-spacing:.06em;
+  font-variant-numeric:tabular-nums}
 
 /* ==========================================================================
    FAIXA DE IMAGEM FULL-BLEED
@@ -299,7 +307,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 }
 .diff{padding:30px 0 34px;border-top:1px solid var(--sand)}
 .diff b{
-  display:block;font:500 2.35rem/1 var(--f-display);color:var(--bronze);
+  display:block;font:500 2.35rem/1 var(--f-display);color:var(--bronze-ink);
   font-variant-numeric:tabular-nums;margin-bottom:14px;
 }
 .diff h3{margin-bottom:.55rem}
@@ -343,7 +351,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 }
 .tl-item:first-of-type{border-top:1px solid var(--sand)}
 .tl-item b{
-  font:400 2.15rem/1 var(--f-display);color:var(--bronze);font-variant-numeric:tabular-nums;
+  font:400 2.15rem/1 var(--f-display);color:var(--bronze-ink);font-variant-numeric:tabular-nums;
   position:relative;
 }
 .tl-item b::after{
@@ -369,7 +377,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
   transition:border-color .4s var(--e2),transform .5s var(--e);
 }
 .obra:hover{border-color:var(--ink);transform:translateY(-3px)}
-.obra-fig{position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--sand)}
+.obra-fig{display:block;position:relative;overflow:hidden;aspect-ratio:4/3;background:var(--sand)}
 .obra-fig img{width:100%;height:100%;object-fit:cover;transition:transform 1.1s var(--e)}
 .obra:hover .obra-fig img{transform:scale(1.055)}
 .obra-zoom{
@@ -379,13 +387,13 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 }
 .obra:hover .obra-zoom,.obra:focus-visible .obra-zoom{opacity:1;transform:none}
 .obra-zoom svg{width:17px;height:17px;stroke:var(--ink);fill:none;stroke-width:1.6}
-.obra-body{padding:20px 20px 22px}
+.obra-body{display:block;padding:20px 20px 22px}
 .obra-over{
   display:block;font:600 .655rem/1 var(--f-sans);letter-spacing:.16em;text-transform:uppercase;
   color:var(--clay-deep);margin-bottom:11px;
 }
 .obra h3{font-size:1.16rem;margin-bottom:7px}
-.obra-desc{margin:0;font-size:.9rem;line-height:1.5;color:var(--muted)}
+.obra-desc{display:block;margin:0;font-size:.9rem;line-height:1.5;color:var(--muted)}
 .obra-meta{display:flex;justify-content:space-between;gap:12px;align-items:baseline;
   margin-top:15px;padding-top:13px;border-top:1px solid var(--sand)}
 .obra-meta .small{color:var(--muted);font-variant-numeric:tabular-nums}
@@ -484,7 +492,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.15fr;gap:clamp(30px,4.5vw,70px)}
 .foot-brand img{height:44px;width:auto;margin-bottom:22px}
 .foot-brand p{color:var(--muted-dark);font-size:.92rem;max-width:38ch}
-.foot h4{font:600 .68rem/1 var(--f-sans);letter-spacing:.185em;text-transform:uppercase;color:var(--bronze);margin-bottom:20px}
+.foot h3{font:600 .68rem/1 var(--f-sans);letter-spacing:.185em;text-transform:uppercase;color:var(--bronze);margin-bottom:20px}
 .foot ul{list-style:none;margin:0;padding:0;display:grid;gap:3px}
 .foot a{display:inline-block;padding:5px 0;color:#D8D1C5;text-decoration:none;font-size:.92rem}
 .foot a:hover{color:var(--clay)}
