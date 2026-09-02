@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://santaclaraengenharia.com.br/sitemap.xml
