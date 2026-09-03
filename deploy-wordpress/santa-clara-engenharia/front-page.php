@@ -595,8 +595,6 @@ get_header();
       </div>
 
       <div class="steps" data-seq>
-        <div class="steps-line" aria-hidden="true"><i></i></div>
-
         <article class="step">
           <b>1</b>
           <h3>Fale com o engenheiro responsável</h3>

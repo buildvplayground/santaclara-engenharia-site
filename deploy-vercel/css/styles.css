@@ -497,12 +497,22 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
    ========================================================================== */
 .cta-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(30px,4.4vw,74px);align-items:center}
 .steps{position:relative;padding-left:34px;margin:0}
-.steps-line{position:absolute;left:0;top:10px;bottom:12px;width:1px;background:var(--sand)}
-.steps-line i{position:absolute;inset:0;background:var(--clay-deep);transform:scaleY(0);transform-origin:top;
-  transition:transform 1.25s var(--e)}
-.steps[data-on="true"] .steps-line i{transform:scaleY(1)}
 .step{position:relative;padding:0 0 clamp(18px,2.6vh,30px)}
 .step:last-child{padding-bottom:0}
+/* O conector liga o centro de um selo ao centro do proximo: o selo tem 21px e
+   comeca em -34px, entao o centro dele fica em -23.5px. Como a altura e 100% da
+   caixa do passo, a linha acompanha qualquer refluxo de texto. */
+.step::before,.step::after{
+  content:"";position:absolute;left:-24px;top:10.5px;width:1px;height:100%;
+}
+.step::before{background:var(--sand)}
+.step::after{
+  background:var(--clay-deep);transform:scaleY(0);transform-origin:top;
+  transition:transform .8s var(--e);
+}
+.step:last-child::before,.step:last-child::after{content:none}
+.steps[data-on="true"] .step::after{transform:scaleY(1)}
+.steps[data-on="true"] .step:nth-of-type(2)::after{transition-delay:.34s}
 .step b{
   position:absolute;left:-34px;top:0;width:21px;height:21px;border-radius:50%;
   background:var(--bone);border:1px solid var(--clay-deep);color:var(--clay-deep);
@@ -711,5 +721,6 @@ html[data-motion] [data-reveal][data-on]{opacity:1;transform:none;filter:none}
   .w i{transform:none!important;transition:none!important}
   .mq{animation:none}
   .steps[data-on="true"] .step{animation:none}
-  .tl[data-on="true"] .tl-line i,.steps[data-on="true"] .steps-line i{transform:scaleY(1);transition:none}
+  .tl[data-on="true"] .tl-line i{transform:scaleY(1);transition:none}
+  .steps[data-on="true"] .step::after{transform:scaleY(1);transition:none}
 }
