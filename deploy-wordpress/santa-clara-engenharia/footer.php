@@ -12,7 +12,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 
 <!-- ====================================================== RODAPE -->
-<footer class="foot dark">
+<footer class="foot dark pat pat-fade">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="foot-grid">
       <div class="foot-brand">
@@ -20,6 +21,9 @@ if ( ! defined( 'ABSPATH' ) ) {
              alt="Santa Clara / F2L Engenharia">
         <p>Obras comerciais para redes franqueadas em shoppings, galerias e centros urbanos.
            Excelência técnica, agilidade e conformidade.</p>
+        <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+          Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
+        </a>
       </div>
 
       <div>

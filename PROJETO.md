@@ -30,13 +30,19 @@ Pipeline BuildV `criar-site`, executado em 02/09/2026.
 
 ## O que o site tem
 
+**Revisão de 03/09/2026:** cada seção de conteúdo virou um painel de uma tela
+(`min-height:100svh`, conteúdo centralizado, densidade calibrada por altura de
+janela), o hero foi recalibrado, o grid de diferenciais fixou 3 itens por linha,
+entraram CTAs em todas as seções, o pattern do arco da marca e fotografia de banco
+de imagem na composição. Detalhes em `design-system/design-system.md` §6 a §8.
+
 Ritmo de seções sem dois blocos iguais em sequência:
 
-1. **Hero** full-bleed com foto real, cena travada no scroll (pin + scrub) em desktop
+1. **Hero** full-bleed com interior de shopping, cena travada no scroll (pin + scrub) em desktop
 2. **Marquee** tipográfico com as 29 marcas atendidas
 3. **Sobre**, split foto + texto
 4. **Faixa full-bleed** com parallax
-5. **Diferenciais técnicos**, grid editorial numerado assimétrico (sem card, sem ícone genérico)
+5. **Diferenciais técnicos**, grid editorial numerado de 3 por linha, sem card e sem ícone genérico, com linha de fechamento e CTA
 6. **Banda de números** em fundo escuro, contadores animados
 7. **Método**, split invertido
 8. **Processo**, timeline de 5 etapas com linha que desenha no scroll
@@ -70,7 +76,9 @@ Consolidadas em `state.json` → `pendencias`. Ver o report final.
 ## Como rodar de novo
 
 ```bash
-python _raw/build-imgs.py        # trata as fotos (webp) e regenera o portfólio
+python _raw/build-imgs.py        # trata as fotos do cliente (webp) e regenera o portfólio
+python _raw/build-stock.py       # baixa e trata as fotos de composição (banco de imagem)
+python _raw/medir-secoes.py      # confere que nenhuma seção excede a altura da janela
 python _raw/make-logo.py         # regenera os logotipos transparentes e o SVG da marca
 python _raw/build-wordpress.py   # regenera o tema WordPress a partir de Site/
 python _raw/auditar.py           # auditoria por medição (precisa do preview em pé)

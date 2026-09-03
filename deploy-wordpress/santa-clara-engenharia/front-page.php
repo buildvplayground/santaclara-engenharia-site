@@ -18,8 +18,8 @@ get_header();
   <div data-hero-sticky>
     <div class="hero-stage">
       <div class="hero-media" data-hero-media>
-        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hero.webp' ) ); ?>" width="1170" height="775" fetchpriority="high"
-             alt="Instalação de luminárias lineares no forro de uma obra comercial executada pela Santa Clara Engenharia">
+        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/hero.webp' ) ); ?>" width="2200" height="1238" fetchpriority="high"
+             alt="Interior de shopping center com cobertura estrutural, escadas rolantes e lojas em operação">
       </div>
       <div class="hero-veil" aria-hidden="true"></div>
       <div class="hero-fx" data-hero-fx aria-hidden="true"></div>
@@ -29,11 +29,10 @@ get_header();
           <div class="hero-grid">
             <div>
               <span class="eyebrow" data-reveal="soft">Obras comerciais para franquias</span>
-              <h1 data-split>Sua loja pronta no padrão da rede e no prazo que o shopping cobra.</h1>
+              <h1 data-split>Sua loja pronta no padrão da rede e no prazo do shopping.</h1>
               <p class="hero-lede" data-reveal="soft">
-                A Santa Clara Engenharia executa obras comerciais para redes franqueadas em
-                shoppings, galerias e centros urbanos. Da liberação da área até a loja pronta
-                para inaugurar, com cronograma, medição e documentação em dia.
+                Executamos obras comerciais para redes franqueadas em shoppings, galerias e
+                centros urbanos. Da liberação da área à loja pronta para inaugurar.
               </p>
               <div class="hero-actions" data-reveal="soft">
                 <a class="btn btn-solid" data-wa-btn="obra comercial">
@@ -47,7 +46,7 @@ get_header();
 
             <dl class="hero-meta" data-reveal="soft">
               <div><dt>Especialidade</dt><dd><span class="sl">/</span> Obras para franquias</dd></div>
-              <div><dt>Ambiente</dt><dd><span class="sl">/</span> Shopping, galeria e centro urbano</dd></div>
+              <div><dt>Ambiente</dt><dd><span class="sl">/</span> Shopping e centro urbano</dd></div>
               <div><dt>Base</dt><dd><span class="sl">/</span> São Paulo, obras em 5 estados</dd></div>
             </dl>
           </div>
@@ -71,13 +70,14 @@ get_header();
 </section>
 
 <!-- ====================================================== SOBRE (split) -->
-<section class="sec" id="sobre">
+<section class="sec pat pat-side" id="sobre">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="split">
-      <figure class="split-media" data-reveal="fig" style="margin:0">
-        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/sobre.webp' ) ); ?>" width="1170" height="876" loading="lazy"
-             alt="Equipe da Santa Clara Engenharia executando estrutura e instalações em loja de shopping">
-        <figcaption class="split-tag">Obra em execução, unidade Bom Beef Burguers</figcaption>
+      <figure class="split-media" data-reveal="fig">
+        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/sobre.webp' ) ); ?>" width="1400" height="972" loading="lazy"
+             alt="Dois profissionais de obra conferindo a documentação técnica dentro de um canteiro">
+        <figcaption class="split-tag">Conferência técnica antes de liberar a frente de serviço</figcaption>
       </figure>
 
       <div class="split-body">
@@ -88,15 +88,9 @@ get_header();
           shopping antes de pisar no canteiro.
         </p>
         <p data-reveal>
-          A Santa Clara Engenharia nasceu para oferecer soluções estruturadas e confiáveis na
-          construção civil e se especializou em obras comerciais para franquias. A experiência
-          veio de projetos de expansão de redes franqueadas, onde cada unidade repete um padrão
-          e cada dia parado custa faturamento.
-        </p>
-        <p data-reveal>
-          Esse conhecimento cobre as duas pontas do problema: as exigências da franqueadora e as
-          particularidades de obra dentro de shopping center, com horário de silêncio, acesso
-          restrito, taxa de administração e vistoria de entrega.
+          A Santa Clara se especializou em obras comerciais para franquias. A experiência veio
+          de projetos de expansão de redes, onde cada unidade repete um padrão e cada dia parado
+          custa faturamento.
         </p>
 
         <ul class="creds" data-reveal>
@@ -104,6 +98,12 @@ get_header();
           <li><b>02</b><span>Cronograma, medição e relatório de progresso por unidade</span></li>
           <li><b>03</b><span>Documentação técnica e legal completa na entrega</span></li>
         </ul>
+
+        <div class="split-actions" data-reveal>
+          <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+            Falar com um engenheiro <span class="arw" aria-hidden="true">&rsaquo;</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
@@ -112,43 +112,55 @@ get_header();
 <!-- ====================================================== FAIXA 1 -->
 <section class="band" aria-label="Obra em andamento">
   <div class="band-media" data-parallax="0.10">
-    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/faixa-obra.webp' ) ); ?>" width="1170" height="795" loading="lazy"
-         alt="Área de loja recebida em obra bruta dentro de um shopping, antes do início dos serviços">
+    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/faixa-obra.webp' ) ); ?>" width="1900" height="1267" loading="lazy"
+         alt="Equipe aplicando o acabamento do piso em uma loja ampla ainda em obra">
   </div>
   <div class="band-scrim" aria-hidden="true"></div>
   <div class="band-in">
     <div class="container">
+      <span class="eyebrow" data-reveal="soft">Prazo</span>
       <p data-reveal>Obra em shopping tem janela curta. O planejamento é o que cabe nela.</p>
+      <div class="band-actions" data-reveal>
+        <a class="btn btn-solid btn-sm" data-wa-btn="cronograma de obra">
+          Receber um cronograma <span class="arw" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
 
 <!-- ====================================================== DIFERENCIAIS -->
-<section class="sec alt" id="diferenciais">
+<section class="sec alt pat pat-fade" id="diferenciais">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow" data-reveal="soft">02 <span class="sl">/</span> Diferenciais técnicos</span>
-      <h2 data-split>Seis coisas que mudam o resultado antes de a primeira parede subir.</h2>
+    <div class="head-row">
+      <div class="sec-head">
+        <span class="eyebrow" data-reveal="soft">02 <span class="sl">/</span> Diferenciais técnicos</span>
+        <h2 data-split>Seis coisas que mudam o resultado antes da primeira parede subir.</h2>
+      </div>
+      <a class="btn btn-line btn-sm" data-reveal href="#processo">
+        Ver o processo <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
     </div>
 
     <div class="diffs">
       <article class="diff" data-reveal>
         <b>01</b>
-        <h3>Especialização em obras para franquias</h3>
+        <h3>Especialização em franquias</h3>
         <p>Domínio das exigências padronizadas pelas grandes redes, do layout aprovado ao
-           acabamento que a marca especifica. A obra sai igual ao manual, não parecida com ele.</p>
+           acabamento que a marca especifica.</p>
       </article>
       <article class="diff" data-reveal>
         <b>02</b>
         <h3>Ambientes de alta complexidade</h3>
-        <p>Shoppings, galerias e centros urbanos, com as regras de acesso, horário e convivência
-           que cada administração impõe.</p>
+        <p>Shoppings, galerias e centros urbanos, com as regras de acesso e horário que cada
+           administração impõe.</p>
       </article>
       <article class="diff" data-reveal>
         <b>03</b>
         <h3>Planejamento técnico e financeiro</h3>
         <p>Orçamento aberto e cronograma físico financeiro, para previsibilidade e controle de
-           custos do início ao repasse.</p>
+           custos até o repasse.</p>
       </article>
       <article class="diff" data-reveal>
         <b>04</b>
@@ -168,22 +180,26 @@ get_header();
         <p>Documentação rigorosa e entregas seguras, com a obra apta a passar na vistoria da
            administração e da franqueadora.</p>
       </article>
+    </div>
 
-      <div class="diff diff-note" data-reveal>
-        <p>Cada um desses seis pontos vira item de contrato e linha de cronograma, não promessa
-           de reunião.</p>
-        <a class="btn btn-line" data-wa-btn="obra comercial para franquia">
-          Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
-        </a>
-      </div>
+    <div class="diffs-foot" data-reveal>
+      <p>Cada um desses seis pontos vira item de contrato e linha de cronograma.</p>
+      <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+        Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
     </div>
   </div>
 </section>
 
 <!-- ====================================================== NUMEROS -->
-<section class="sec dark" aria-label="Números da operação">
+<section class="sec dark pat pat-fade" aria-label="Números da operação">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
-    <span class="eyebrow" data-reveal="soft">Números da operação</span>
+    <div class="sec-head">
+      <span class="eyebrow" data-reveal="soft">03 <span class="sl">/</span> Números da operação</span>
+      <h2 data-split>O que já foi entregue, conferido unidade a unidade.</h2>
+    </div>
+
     <div class="stats">
       <div class="stat" data-reveal>
         <b><span data-count="27">27</span></b>
@@ -202,9 +218,13 @@ get_header();
         <span>para entregar 300 m&sup2; no Shopping Plaza Sul</span>
       </div>
     </div>
-    <p class="stats-note" data-reveal="soft">
-      Números conferidos na apresentação institucional da empresa, unidade a unidade.
-    </p>
+
+    <div class="stats-foot" data-reveal>
+      <p class="stats-note">Números conferidos na apresentação institucional da empresa.</p>
+      <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+        Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </div>
   </div>
 </section>
 
@@ -212,14 +232,14 @@ get_header();
 <section class="sec">
   <div class="container">
     <div class="split rev">
-      <figure class="split-media" data-reveal="fig" style="margin:0">
-        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/metodo.webp' ) ); ?>" width="1170" height="1196" loading="lazy"
-             alt="Cozinha industrial concluída com revestimento cerâmico, bancadas em inox e prumada de gás sinalizada">
-        <figcaption class="split-tag">Instalações concluídas e sinalizadas, pronta para vistoria</figcaption>
+      <figure class="split-media" data-reveal="fig">
+        <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/metodo.webp' ) ); ?>" width="1400" height="934" loading="lazy"
+             alt="Profissional dando o acabamento final em uma parede de loja recém-executada">
+        <figcaption class="split-tag">Acabamento conferido frente a frente, antes da medição</figcaption>
       </figure>
 
       <div class="split-body">
-        <span class="eyebrow" data-reveal="soft">03 <span class="sl">/</span> Como a obra roda</span>
+        <span class="eyebrow" data-reveal="soft">04 <span class="sl">/</span> Como a obra roda</span>
         <h2 data-split>A obra padronizada não é a obra repetida. É a obra que não surpreende.</h2>
         <p class="lede" data-reveal>
           Cada unidade tem laje, prumada, ponto de gás e exigência de administração diferentes.
@@ -230,21 +250,28 @@ get_header();
           amarrado ao calendário do shopping. E medição que acompanha o que foi de fato
           executado, não o que estava previsto.
         </p>
-        <p data-reveal>
-          <strong>É isso que permite prometer data de inauguração sem chutar</strong> e sustentar
-          a promessa quando a obra encontra o imprevisto que toda obra encontra.
-        </p>
+        <div class="split-actions" data-reveal>
+          <a class="btn btn-solid btn-sm" data-wa-btn="orçamento aberto e cronograma">
+            Pedir orçamento aberto <span class="arw" aria-hidden="true">&rsaquo;</span>
+          </a>
+        </div>
       </div>
     </div>
   </div>
 </section>
 
 <!-- ====================================================== PROCESSO -->
-<section class="sec alt" id="processo">
+<section class="sec alt pat pat-side" id="processo">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow" data-reveal="soft">04 <span class="sl">/</span> Do contato à inauguração</span>
-      <h2 data-split>Cinco etapas entre a chave da área e a loja funcionando.</h2>
+    <div class="head-row">
+      <div class="sec-head">
+        <span class="eyebrow" data-reveal="soft">05 <span class="sl">/</span> Do contato à inauguração</span>
+        <h2 data-split>Cinco etapas entre a chave da área e a loja funcionando.</h2>
+      </div>
+      <a class="btn btn-line btn-sm" data-reveal href="#obras">
+        Ver obras entregues <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
     </div>
 
     <div class="tl" data-seq>
@@ -271,8 +298,8 @@ get_header();
       <article class="tl-item" data-seq-item>
         <b>04</b>
         <h3>Execução com medição</h3>
-        <p>Frentes de civil, elétrica, hidráulica, climatização e acabamento, com relatório de
-           progresso e medição do que foi executado.</p>
+        <p>Civil, elétrica, hidráulica, climatização e acabamento, com relatório de progresso e
+           medição do que foi executado.</p>
       </article>
       <article class="tl-item" data-seq-item>
         <b>05</b>
@@ -281,19 +308,32 @@ get_header();
            franqueadora até a liberação.</p>
       </article>
     </div>
+
+    <div class="tl-foot" data-reveal>
+      <a class="btn btn-solid btn-sm" data-wa-btn="visita técnica">
+        Agendar visita técnica <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <span class="small">A conversa começa direto com o engenheiro responsável.</span>
+    </div>
   </div>
 </section>
 
 <!-- ====================================================== FAIXA 2 -->
 <section class="band" aria-label="Loja entregue">
   <div class="band-media" data-parallax="0.09">
-    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/faixa-entrega.webp' ) ); ?>" width="1170" height="775" loading="lazy"
-         alt="Loja de estética automotiva concluída, com piso epóxi polido e luminárias instaladas">
+    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/faixa-entrega.webp' ) ); ?>" width="1900" height="1268" loading="lazy"
+         alt="Loja entregue dentro de shopping, com marcenaria escura, iluminação embutida e piso polido">
   </div>
   <div class="band-scrim" aria-hidden="true"></div>
   <div class="band-in">
     <div class="container">
+      <span class="eyebrow" data-reveal="soft">Entrega</span>
       <p data-reveal>Loja entregue é loja que passa na vistoria no primeiro dia.</p>
+      <div class="band-actions" data-reveal>
+        <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+          Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -301,9 +341,14 @@ get_header();
 <!-- ====================================================== OBRAS -->
 <section class="sec" id="obras">
   <div class="container">
-    <div class="sec-head">
-      <span class="eyebrow" data-reveal="soft">05 <span class="sl">/</span> Obras entregues</span>
-      <h2 data-split>Obras executadas para redes que abriram unidade com a Santa Clara.</h2>
+    <div class="head-row">
+      <div class="sec-head">
+        <span class="eyebrow" data-reveal="soft">06 <span class="sl">/</span> Obras entregues</span>
+        <h2 data-split>Redes que abriram unidade com a Santa Clara.</h2>
+      </div>
+      <a class="btn btn-line btn-sm" data-reveal href="#depoimentos">
+        Ler depoimentos <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
     </div>
 
     <div class="grid-obras">
@@ -322,7 +367,6 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">São Paulo e Goiânia</span>
           <h3>Bom Beef Burguers</h3>
-          <p class="obra-desc">Cinco unidades de hamburgueria, da cozinha industrial ao salão.</p>
           <span class="obra-meta">
             <span class="small">Hamburgueria</span>
             <span class="small">10 fotos</span>
@@ -344,7 +388,6 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">São Paulo</span>
           <h3>DryWash</h3>
-          <p class="obra-desc">Unidades de estética automotiva em estacionamento de shopping.</p>
           <span class="obra-meta">
             <span class="small">Estética automotiva</span>
             <span class="small">8 fotos</span>
@@ -366,7 +409,6 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">Shoppings de São Paulo</span>
           <h3>Davvero Gelateria</h3>
-          <p class="obra-desc">Três unidades da rede, com acabamento e marcenaria de padrão.</p>
           <span class="obra-meta">
             <span class="small">Gelateria</span>
             <span class="small">4 fotos</span>
@@ -388,7 +430,6 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">São Paulo e Rio de Janeiro</span>
           <h3>Fichips</h3>
-          <p class="obra-desc">Onze unidades da rede, a maior expansão acompanhada pela empresa.</p>
           <span class="obra-meta">
             <span class="small">Fast food</span>
             <span class="small">4 fotos</span>
@@ -410,7 +451,6 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">São Paulo</span>
           <h3>Vino</h3>
-          <p class="obra-desc">Adega e salão, com mármore, escada iluminada e área climatizada.</p>
           <span class="obra-meta">
             <span class="small">Adega e restaurante</span>
             <span class="small">5 fotos</span>
@@ -432,14 +472,40 @@ get_header();
         <span class="obra-body">
           <span class="obra-over">São Paulo</span>
           <h3>Varejo e bem-estar</h3>
-          <p class="obra-desc">Chat Noir, Academia da Face e Costume, entre lojas e salão de eventos.</p>
           <span class="obra-meta">
-            <span class="small">Varejo e serviços</span>
+            <span class="small">Chat Noir, Academia da Face e Costume</span>
             <span class="small">5 fotos</span>
           </span>
         </span>
       </button>
 
+    </div>
+
+    <div class="obras-foot" data-reveal>
+      <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+        Quero a minha na lista <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
+      <span class="small">27 unidades entregues para 29 marcas, em 5 estados.</span>
+    </div>
+  </div>
+</section>
+
+<!-- ====================================================== FAIXA 3 -->
+<section class="band" aria-label="Expansão de rede">
+  <div class="band-media" data-parallax="0.08">
+    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/faixa-shopping.webp' ) ); ?>" width="1900" height="984" loading="lazy"
+         alt="Circulação de shopping center com escadas rolantes e lojas em operação">
+  </div>
+  <div class="band-scrim" aria-hidden="true"></div>
+  <div class="band-in">
+    <div class="container">
+      <span class="eyebrow" data-reveal="soft">Expansão</span>
+      <p data-reveal>Uma unidade ou a rede inteira, no mesmo padrão de entrega.</p>
+      <div class="band-actions" data-reveal>
+        <a class="btn btn-solid btn-sm" data-wa-btn="expansão de rede">
+          Falar sobre a expansão <span class="arw" aria-hidden="true">&rsaquo;</span>
+        </a>
+      </div>
     </div>
   </div>
 </section>
@@ -447,12 +513,12 @@ get_header();
 <!-- ====================================================== DEPOIMENTOS -->
 <section class="sec quotes dark" id="depoimentos">
   <div class="quotes-bg" data-parallax="0.07">
-    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/acabamento.webp' ) ); ?>" width="1170" height="1148" loading="lazy" alt="">
+    <img src="<?php echo esc_url( get_theme_file_uri( 'assets/img/acabamento.webp' ) ); ?>" width="1700" height="1133" loading="lazy" alt="">
   </div>
   <div class="quotes-scrim" aria-hidden="true"></div>
 
   <div class="container">
-    <span class="eyebrow" data-reveal="soft">06 <span class="sl">/</span> Quem já contratou</span>
+    <span class="eyebrow" data-reveal="soft">07 <span class="sl">/</span> Quem já contratou</span>
 
     <div class="q-lead-wrap">
       <blockquote class="q-lead" data-reveal="soft">
@@ -469,36 +535,40 @@ get_header();
       <li data-reveal>
         <span class="q-mark" aria-hidden="true">&ldquo;</span>
         <p>Obra da nossa loja no Shopping Passeio das Águas, em Goiânia, executada em tempo
-           recorde pela Engenharia Santa Clara. Tudo correu super bem, com ótimo acompanhamento
-           e atenção do Engenheiro Luiz.</p>
+           recorde. Tudo correu super bem, com ótimo acompanhamento do Engenheiro Luiz.</p>
         <p class="q-by">Franqueado, Shopping Passeio das Águas, Goiânia</p>
       </li>
       <li data-reveal>
         <span class="q-mark" aria-hidden="true">&ldquo;</span>
         <p>A obra da nossa loja no Partage Shopping, em Betim, ficou linda. O resultado superou
-           as expectativas, e toda a equipe gostou bastante. Trabalho excelente do Engenheiro
-           Luiz e sua equipe.</p>
+           as expectativas, e toda a equipe gostou bastante.</p>
         <p class="q-by">Franqueado, Partage Shopping, Betim</p>
       </li>
       <li data-reveal>
         <span class="q-mark" aria-hidden="true">&ldquo;</span>
-        <p>Já realizei três obras com a Engenharia Santa Clara, unidades da Davvero nos shoppings
-           Plaza Sul, Eldorado e Morumbi. Sempre com ótimo atendimento, qualidade e cumprimento
-           de prazos.</p>
+        <p>Já realizei três obras com a Santa Clara, unidades da Davvero nos shoppings Plaza Sul,
+           Eldorado e Morumbi. Sempre com qualidade e cumprimento de prazos.</p>
         <p class="q-by">Franqueado Davvero, Plaza Sul, Eldorado e Morumbi</p>
       </li>
     </ul>
+
+    <div class="quotes-foot" data-reveal>
+      <a class="btn btn-solid btn-sm" data-wa-btn="obra comercial para franquia">
+        Solicitar orçamento <span class="arw" aria-hidden="true">&rsaquo;</span>
+      </a>
+    </div>
   </div>
 </section>
 
 <!-- ====================================================== CTA FINAL -->
-<section class="sec alt" id="contato">
+<section class="sec alt pat pat-fade" id="contato">
+  <div class="pat-bg" aria-hidden="true"></div>
   <div class="container">
     <div class="cta-grid">
       <div>
-        <span class="eyebrow" data-reveal="soft">07 <span class="sl">/</span> Solicitar orçamento</span>
+        <span class="eyebrow" data-reveal="soft">08 <span class="sl">/</span> Solicitar orçamento</span>
         <h2 data-split>Manda a área e o manual da rede. A gente devolve prazo e orçamento.</h2>
-        <p class="lede" data-reveal style="margin-top:1.5rem">
+        <p class="lede" data-reveal style="margin-top:1.2rem">
           Sem formulário longo e sem intermediário. A conversa começa direto no WhatsApp com
           quem responde tecnicamente pela obra.
         </p>
@@ -506,6 +576,9 @@ get_header();
         <div class="cta-actions" data-reveal>
           <a class="btn btn-solid" data-wa-btn="obra comercial para franquia">
             Solicitar orçamento no WhatsApp <span class="arw" aria-hidden="true">&rsaquo;</span>
+          </a>
+          <a class="btn btn-line" href="mailto:engsantaclara@gmail.com">
+            Enviar por e-mail <span class="arw" aria-hidden="true">&rsaquo;</span>
           </a>
         </div>
 
@@ -517,10 +590,6 @@ get_header();
           <li>
             <a href="tel:+5511984151528">Luciana Souza Teixeira</a>
             <span>(11) 98415-1528</span>
-          </li>
-          <li>
-            <a href="mailto:engsantaclara@gmail.com">engsantaclara@gmail.com</a>
-            <span>E-mail comercial</span>
           </li>
         </ul>
       </div>

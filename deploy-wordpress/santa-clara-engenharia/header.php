@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
 <meta property="og:title" content="Santa Clara Engenharia | Obras comerciais para franquias">
-<meta property="og:description" content="Sua loja pronta no padrão da rede e no prazo que o shopping cobra. Obras comerciais para redes franqueadas em shoppings e centros urbanos.">
+<meta property="og:description" content="Sua loja pronta no padrão da rede e no prazo do shopping. Obras comerciais para redes franqueadas em shoppings e centros urbanos.">
 <meta property="og:image" content="<?php echo esc_url( get_theme_file_uri( 'assets/img/hero.webp' ) ); ?>">
 <meta name="twitter:card" content="summary_large_image">
 

@@ -22,7 +22,7 @@ get_header();
   </div>
 </section>
 
-<section class="sec">
+<section class="sec pagina">
   <div class="container">
     <div class="prose">
       <p class="small">Última atualização: setembro de 2026.</p>

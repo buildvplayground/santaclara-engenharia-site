@@ -23,7 +23,7 @@ get_header();
   </div>
 </section>
 
-<section class="sec">
+<section class="sec pagina">
   <div class="container">
     <div class="prose">
       <h2>O que procuramos</h2>
