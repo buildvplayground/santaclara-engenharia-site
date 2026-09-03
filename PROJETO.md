@@ -4,7 +4,7 @@ Obras comerciais para redes franqueadas em shoppings, galerias e centros urbanos
 Pipeline BuildV `criar-site`, executado em 02/09/2026.
 
 - **Drive:** <https://drive.google.com/drive/folders/19RkiyMthZa_TS-UILouj4pdtAs999rmG>
-- **Repositório:** `dev-buildv/santaclara-engenharia-site` (privado)
+- **Repositório:** `buildvplayground/santaclara-engenharia-site` (privado, org renomeada de `dev-buildv`)
 - **Preview local:** <http://localhost:8814> (`node _raw/preview-server.js`)
 - **Preview do tema WP:** <http://127.0.0.1:8815> (`php -S 127.0.0.1:8815 _raw/wp-router.php`)
 - **Hospedagem:** duas pastas prontas, `deploy-vercel/` e `deploy-wordpress/`. Domínio pendente.

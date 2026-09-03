@@ -23,7 +23,7 @@
    "n": 2.5,
    "nome": "Repositorio GitHub",
    "status": "done",
-   "nota": "dev-buildv/santaclara-engenharia-site, privado. Versiona so deploy-vercel, deploy-wordpress e estado."
+   "nota": "buildvplayground/ (org renomeada de dev-buildv) santaclara-engenharia-site, privado. Versiona so deploy-vercel, deploy-wordpress e estado."
   },
   {
    "n": 3,
@@ -70,7 +70,7 @@
  ],
  "links": {
   "drive": "https://drive.google.com/drive/folders/19RkiyMthZa_TS-UILouj4pdtAs999rmG",
-  "repo": "https://github.com/dev-buildv/santaclara-engenharia-site",
+  "repo": "https://github.com/buildvplayground/santaclara-engenharia-site",
   "preview_estatico": "http://localhost:8814",
   "preview_wordpress": "http://127.0.0.1:8815",
   "dominio": null
