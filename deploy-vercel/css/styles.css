@@ -17,7 +17,7 @@
 
   --e:cubic-bezier(.16,.84,.28,1);
   --e2:cubic-bezier(.4,0,.2,1);
-  --head-h:78px;
+  --head-h:88px;
   --gut:24px;
 
   --pad-sec:clamp(40px,5.4vh,80px);
@@ -150,8 +150,8 @@ section{position:relative}
 }
 .head[data-hide="true"]{transform:translateY(-100%)}
 .brand{display:inline-flex;align-items:center;text-decoration:none}
-.brand img{height:34px;width:auto;transition:height .45s var(--e2)}
-.head[data-solid="true"] .brand img{height:29px}
+.brand img{height:46px;width:auto;transition:height .45s var(--e2)}
+.head[data-solid="true"] .brand img{height:38px}
 
 .nav{display:flex;align-items:center;gap:28px}
 .nav a{
@@ -531,7 +531,7 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
    ========================================================================== */
 .foot{background:var(--ink);color:var(--bone);padding:clamp(48px,6vh,80px) 0 28px;position:relative}
 .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1.15fr;gap:clamp(28px,4vw,64px)}
-.foot-brand img{height:40px;width:auto;margin-bottom:18px}
+.foot-brand img{height:58px;width:auto;margin-bottom:20px}
 .foot-brand p{color:var(--muted-dark);font-size:.875rem;max-width:38ch}
 .foot h3{font:600 .655rem/1 var(--f-sans);letter-spacing:.185em;text-transform:uppercase;
   color:var(--bronze);margin-bottom:16px}
@@ -633,7 +633,10 @@ body.menu-open .burger span::after{top:0;transform:rotate(-45deg)}
   .foot-brand{grid-column:1/-1}
 }
 @media (max-width:900px){
-  :root{--head-h:66px}
+  :root{--head-h:90px}   /* .brand ganha padding de toque no celular */
+  .brand img{height:40px}
+  .head[data-solid="true"] .brand img{height:34px}
+  .foot-brand img{height:50px}
   /* alvo de toque confortavel no celular */
   .btn-sm,.ck .btn{padding:.88em 1.35em;font-size:.775rem}
   .brand{padding:6px 0}
